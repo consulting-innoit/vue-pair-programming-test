@@ -4,16 +4,21 @@
   "description": "A simple Vue.js application for pair programming tests.",
   "main": "src/main.js",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "serve": "vite preview"
+    "dev": "vite --mode localhost --host",
+    "build": "rm -rf dist && npm run check-typing && vite build",
+    "preview": "vite preview --host",
+    "check-typing": "vue-tsc --build --noEmit"
   },
   "dependencies": {
-    "vue": "^3.0.0"
+    "vue": "^3.5.30"
   },
   "devDependencies": {
-    "vite": "^4.0.0",
-    "@vitejs/plugin-vue": "^4.0.0"
+    "@vitejs/plugin-vue": "^6.0.4",
+    "@vue/tsconfig": "^0.8.1",
+    "sass-embedded": "^1.98.0",
+    "typescript": "~5.9.3",
+    "vite": "8.0.1",
+    "vue-tsc": "^3.2.5"
   },
   "keywords": [],
   "author": "",

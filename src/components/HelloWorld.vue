@@ -4,17 +4,13 @@
   </div>
 </template>
 
-<script>
-export default {
-  data() {
-    return {
-      greeting: 'Hello, Vue.js!'
-    };
-  }
-};
+<script setup lang="ts">
+import { ref } from 'vue';
+
+const greeting = ref('Hello, Vue.js!');
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 .hello {
   text-align: center;
   margin-top: 20px;

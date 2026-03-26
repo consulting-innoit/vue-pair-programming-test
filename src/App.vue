@@ -1,23 +1,14 @@
 <template>
-  <div id="app">
-    <HelloWorld />
-    <Counter />
-  </div>
+	<HelloWorld />
+	<Counter />
 </template>
 
-<script>
+<script setup lang="ts">
 import HelloWorld from './components/HelloWorld.vue';
 import Counter from './components/Counter.vue';
-
-export default {
-  components: {
-    HelloWorld,
-    Counter
-  }
-}
 </script>
 
-<style>
+<style lang="scss">
 #app {
   text-align: center;
   margin-top: 60px;

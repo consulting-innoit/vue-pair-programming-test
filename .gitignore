@@ -1,0 +1,21 @@
+node_modules
+package-lock.json
+.DS_Store
+dist
+dist-ssr
+coverage
+*.local*
+
+# Logs
+logs
+*.log
+npm-debug.log*
+*.cache
+
+# Editor directories and files
+.idea
+
+*.tsbuildinfo
+
+# Vite
+*.timestamp-*-*.mjs
