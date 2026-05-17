@@ -1,0 +1,57 @@
+$primary: #006de2; //primary slightly darker to improve contrast
+$primary-dark: #0056b3;
+$radius-sm: 5px;
+$radius-lg: 15px;
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+}
+
+h1,
+h2,
+h3 {
+  color: #333;
+}
+
+h1 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+button {
+  font-size: 1em;
+  padding: 10px 15px;
+  margin: 5px;
+  border: none;
+  border-radius: $radius-sm;
+  background-color: $primary;
+  color: white;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $primary-dark;
+  }
+  //accesibility
+  &:focus-visible {
+    outline: 2px solid $primary-dark;
+    outline-offset: 2px;
+  }
+}
+
+.card {
+  border: 2px solid $primary;
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.3);
+  border-radius: $radius-lg;
+  background-color: #e3e7ed;
+  padding: 20px;
+}
+.flex {
+  display: flex;
+  gap: 20px;
+}
+p {
+  font-size: 1.5em;
+}
